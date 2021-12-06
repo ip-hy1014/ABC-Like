@@ -1,7 +1,9 @@
+"""
+HorWが1のときコーナーケース
+"""
 import math
-n = int(input())
-m = math.ceil(n/1.08)
-if n==math.floor(m*1.08):
-  print(m)
+h,w = map(int,input().split())
+if h==1 or w==1:
+  print(1)
 else:
-  print(":(")
+  print(math.ceil(h*w/2))
